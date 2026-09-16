@@ -1,3 +1,6 @@
+-- EKS Pod Identity is an AWS feature that allows a Kubernetes Pod to securely access AWS services using an IAM Role, without putting AWS access keys inside the pod.
+
+
 # Kubernetes Service Account with AWS EKS Pod Identity
 
  - How to use a Kubernetes Service Account with AWS EKS Pod Identity to provide secure AWS permissions to pods without storing AWS credentials inside containers.
