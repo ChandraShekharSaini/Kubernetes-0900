@@ -4,3 +4,19 @@ for j in {1..10}; do
     done  
     wait  # Wait for all background curl processes to finish before next iteration
 done
+
+
+
+
+
+
+
+
+
+
+#Powershell commands
+1..5000 | ForEach-Object {
+    Invoke-WebRequest `
+      -Uri "http://a8c84519810d94a838e938625e968027-1972455137.us-east-1.elb.amazonaws.com/" `
+      -UseBasicParsing | Out-Null
+}
