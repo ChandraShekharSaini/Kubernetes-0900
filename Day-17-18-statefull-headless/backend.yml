@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: backend
+spec:
+  containers:
+    - name: backend
+      image: python:3.11-slim
+      command:
+        - /bin/sh
+        - -c
+      args:
+        - |
+          apt-get update &&
+          apt-get install -y git dnsutils &&
+          echo "Backend container started" &&
+          sleep infinity
